@@ -1,14 +1,14 @@
 
 var MyInfo= ()=>{
 
-const a = "Hello,";
-const b = "This is my Info:"
+const a = "Hi 🙋🏻‍♀️ ";
+const b = "Just in case you want to know more about me:)"
 
 return(
 
-        <div>
+        <div className='my-info'>
 
-            <p>{a + b}</p>
+            <p className='greeting'>{a + b}</p>
 
             <ul>
 

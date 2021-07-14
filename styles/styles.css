@@ -1,0 +1,115 @@
+body{
+    background-color: antiquewhite;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+
+/* Nav */
+
+nav{
+    height: 90px;
+}
+
+ul.my-nav{
+
+    display: flex;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+
+ul.my-nav li{
+
+    list-style: none;
+    flex: 1;  
+    margin-right: 2px;  
+    background-color: brown;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ul.my-nav li:last-child{
+margin-right: 0px;
+background-color: rgba(165, 42, 42, 0.815);
+}
+
+ul.my-nav li a {
+    color: antiquewhite;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+/* Info */
+div.my-info{
+    padding: 20px;
+}
+
+p.greeting{
+font-size: 30px;
+color: rgb(99, 40, 0);
+}
+
+p.greeting + ul{
+    list-style-image:url("../images/bullet.png");
+}
+
+p.greeting + ul li{
+    font-size: 20px;
+    color: brown;
+    padding: 5px;
+
+}
+
+
+/* Footer */
+
+footer{
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(255, 193, 112, 0.562);
+    text-align: center;
+    background-image: url('../images/flower.jpg');
+    background-position: bottom;
+
+    border-top: 1.5px solid brown;
+
+}
+footer div{
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 15px;
+}
+
+footer p{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(99, 40, 0);
+    font-size: 17px;
+}
+
+footer p .fa-heart{
+    color: rgb(243, 2, 2);
+}
+
+footer p .fa-coffee{
+    color: rgb(121, 81, 47);
+}
+
+footer p .fa-react{
+    color: #06acce;
+    font-size: 19px;
+}
+
+
+
+
