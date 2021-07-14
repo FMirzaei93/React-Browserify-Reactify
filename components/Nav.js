@@ -3,13 +3,13 @@ var MyNav= ()=>{
 
 return(
 
-    <nav className='my-nav'>
+    <nav>
 
-        <ul>
+        <ul className='my-nav'>
 
-            <li>Products</li>
-            <li>Contact</li>
-            <li>About</li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
         </ul>
 
     </nav>
