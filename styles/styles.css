@@ -1,0 +1,17 @@
+body{
+    background-color: antiquewhite;
+}
+
+.my-nav{
+
+    background-color: brown;
+    display: flex;
+
+}
+
+.my-nav li{
+    background: gray;
+    list-style: none;
+    flex: 1;
+    
+}
