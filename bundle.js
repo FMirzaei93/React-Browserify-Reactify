@@ -1,27 +1,11 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-var MyFooter = ()=>{
-
-return(
-
-React.createElement("footer", null, 
-    React.createElement("p", null, "I am your footer:))")
-)
-
-)
-
-}
-
-module.exports = MyFooter
-
-
-},{}],2:[function(require,module,exports){
 
 var Nav = require('./Nav.js');
 var MyInfo = require('./MyInfo.js');
 var Footer = require('./Footer.js');
 
 
-var Container = ()=>{
+var MyContainer = ()=>{
 return(
 
 React.createElement("div", null, 
@@ -35,7 +19,7 @@ React.createElement("div", null,
 )
 }
 
-module.exports = Container
+module.exports = MyContainer
 
 
 //------------------------------------------------------------------------
@@ -55,7 +39,24 @@ module.exports = Container
 // }
 
 
-},{"./Footer.js":1,"./MyInfo.js":3,"./Nav.js":4}],3:[function(require,module,exports){
+},{"./Footer.js":2,"./MyInfo.js":3,"./Nav.js":4}],2:[function(require,module,exports){
+
+var MyFooter = ()=>{
+
+return(
+
+    React.createElement("footer", null, 
+        React.createElement("p", null, "I am your footer:))")
+    )
+
+      )
+
+}
+
+module.exports = MyFooter
+
+
+},{}],3:[function(require,module,exports){
 
 var MyInfo= ()=>{
 
@@ -90,9 +91,9 @@ var MyNav= ()=>{
 
 return(
 
-    React.createElement("nav", {className: "my-nav"}, 
+    React.createElement("nav", null, 
 
-        React.createElement("ul", null, 
+        React.createElement("ul", {className: "my-nav"}, 
 
             React.createElement("li", null, "Products"), 
             React.createElement("li", null, "Contact"), 
@@ -101,7 +102,7 @@ return(
 
     )
 
-)
+    )
 
 }
 
@@ -110,9 +111,9 @@ module.exports = MyNav
 
 },{}],5:[function(require,module,exports){
 
-var Container = require('./components/MyContainer.js');
+var Container = require('./components/Container.js');
 
-ReactDOM.render(React.createElement(Container, null), document.getElementById('mydiv'));
+ReactDOM.render(React.createElement(Container, null), document.getElementById('my-container'));
 
 
-},{"./components/MyContainer.js":2}]},{},[5]);
+},{"./components/Container.js":1}]},{},[5]);
