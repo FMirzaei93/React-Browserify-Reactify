@@ -15,7 +15,7 @@ We bundle modules as a dependencies tree in a bundle.js file(browsifying) and tr
 This line will check the "scripts" section in package.json and run it.</br><br/>
 
 
-In order for us not to run `$npm run reactify every time that we change one of our modules, we can use "watchify". This command will chack any changes in our modules and apply them immidiately in bundle.js file. You can trigger it by running this line in terminal or cmd:<br/><br/>
+In order for us not to run `$npm run reactify` every time that we change one of our modules, we can use "watchify". This command will chack any changes in our modules and apply them immidiately in bundle.js file. You can trigger it by running this line in terminal or cmd:<br/><br/>
 
 
 `$npm run watchify`<br/>
@@ -23,7 +23,7 @@ In order for us not to run `$npm run reactify every time that we change one of o
 
 *In the "scripts" section in package.json, index.js is our entry point (where we start importing a module) and bundle.js is our output file for having all required modules bundled.<br/><br/>
 
-*You can use other transformers instead of reactify, e.g., "babelify"
+*You can use other transformers instead of reactify, e.g., `babelify`
 
 # Note:
 Before running the application, in terminal or cmd navigate to the folder of the project and run:<br/><br/>
